@@ -15,6 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: FAUZAN.CO
 email: me@fauzan.co
+name: Fauzan Ariffin
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -42,3 +43,35 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Enable pagination for minimal-mistakes theme
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+
+author:
+  name   : "Fauzan Ariffin"
+  avatar : "/assets/images/bio-photo.jpg"
+  bio    : "My awesome biography constrained to a sentence or two goes here."
+  email  : # optional
+  uri    : "https://fauzan.co"
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comment: false
+      share: true
+      related: true
+
+social:
+  type:  # Person or Organization (defaults to Person)
+  name:  # If the user or organization name differs from the site's name
+  links:
+    - "https://twitter.com/fauzantwitme"
+    - "https://www.facebook.com/profile.php?id=1324448736"
+    - "https://www.linkedin.com/in/fauzanariffin/"
