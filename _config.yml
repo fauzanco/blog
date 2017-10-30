@@ -13,22 +13,20 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: FAUZAN.CO
-email: me@fauzan.co
-name: Fauzan Ariffin
+title: "FAUZAN.CO"
+email: "me@fauzan.co"
+name: "Fauzan Ariffin"
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: fauzantwitme
-github_username:  fauzanariffin
 
 # Build settings
-markdown: kramdown
+markdown: "kramdown"
 #theme: minima
-theme: minimal-mistakes-jekyll
+theme: "minimal-mistakes-jekyll"
 plugins:
   - jekyll-feed
 
@@ -45,16 +43,42 @@ plugins:
 #   - vendor/ruby/
 
 # Enable pagination for minimal-mistakes theme
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+paginate           : 5 # amount of posts to show
+paginate_path      : "/page:num/"
 
+# Site Author
 author:
-  name   : "Fauzan Ariffin"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
-  email  : # optional
-  uri    : "https://fauzan.co"
+  name             : "Fauzan Ariffin"
+  avatar           : "/assets/images/bio-photo.jpg"
+  bio              : "I'm a DevOps Engineer & a cloud enthusiast"
+  location         : "Kuala Lumpur, Malaysia"
+  email            :
+  uri              : "https://fauzan.co"
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  flickr           :
+  facebook         : "muhammadfauzanariffin"
+  foursquare       :
+  github           :
+  gitlab           :
+  google_plus      :
+  keybase          :
+  instagram        :
+  lastfm           :
+  linkedin         : "fauzanariffin" # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  pinterest        :
+  soundcloud       :
+  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
+  steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
+  tumblr           :
+  twitter          : "fauzantwitme"
+  vine             :
+  weibo            :
+  xing             :
+  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
 
+# Defaults
 defaults:
   # _posts
   - scope:
@@ -68,10 +92,15 @@ defaults:
       share: true
       related: true
 
-social:
-  type:  # Person or Organization (defaults to Person)
-  name:  # If the user or organization name differs from the site's name
-  links:
-    - "https://twitter.com/fauzantwitme"
-    - "https://www.facebook.com/profile.php?id=1324448736"
-    - "https://www.linkedin.com/in/fauzanariffin/"
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+# Reading Files
+include:
+  - _pages

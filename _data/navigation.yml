@@ -2,6 +2,10 @@
 main:
   - title: "Home"
     url: /
+  - title: "Recommended Links"
+    url: /recommended-links/  
+  # - title: "Sample Page"
+  #   url: /sample-page/  
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
