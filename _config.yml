@@ -30,6 +30,13 @@ theme: "minimal-mistakes-jekyll"
 plugins:
   - jekyll-feed
 
+# Additional Javascripts
+# You can also add scripts to the <head> or closing </body> elements by adding paths to following arrays in _config.yml.  
+head_scripts:
+  - https://identity.netlify.com/v1/netlify-identity-widget.js
+#footer_scripts:
+#  - /assets/js/your-custom-footer-script.js  
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
